@@ -8,7 +8,6 @@
 </head>
 <body>
 
-  <!-- Header Fijo / Sticky -->
   <header>
     <a href="#" class="logo">Universo de Reseñas</a>
     <nav>
@@ -20,52 +19,49 @@
     </nav>
   </header>
 
-  <!-- Buscador Principal -->
   <div class="search-container">
     <input type="text" class="search-input" placeholder="Buscar por título o autor...">
   </div>
 
   <main>
-    <!-- Sección Librero Principal -->
     <section id="librero">
       <h2 class="section-title">Mi Librero</h2>
       
       <div class="bookcase">
         
-        <!-- REPISA 1: Clásicos, Narrativa y No Ficción -->
         <div class="shelf">
           
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Carlo Ginzburg">
             <div class="book-cover">
               <img src="img/el-queso-y-los-gusanos.jpg" alt="El queso y los gusanos" class="cover-img">
             </div>
           </a>
 
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Jane Austen">
             <div class="book-cover">
               <img src="img/mansfield-park.jpg" alt="Mansfield Park" class="cover-img">
             </div>
           </a>
 
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Jane Austen">
             <div class="book-cover">
               <img src="img/orgullo-y-prejuicio.jpg" alt="Orgullo y prejuicio" class="cover-img">
             </div>
           </a>
 
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Mary Shelley">
             <div class="book-cover">
               <img src="img/frankenstein.jpg" alt="Frankenstein" class="cover-img">
             </div>
           </a>
 
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Thomas Mann">
             <div class="book-cover">
               <img src="img/la-muerte-en-venecia.jpg" alt="La muerte en Venecia" class="cover-img">
             </div>
           </a>
 
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Johann Goethe">
             <div class="book-cover">
               <img src="img/las-penas-del-joven-werther.jpg" alt="Las penas del joven Werther" class="cover-img">
             </div>
@@ -74,34 +70,33 @@
         </div>
         <div class="shelf-wood"></div>
 
-        <!-- REPISA 2: Fantasía, Autores Locales y Ensayo -->
         <div class="shelf" style="margin-top: 2rem;">
 
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Christopher Paolini">
             <div class="book-cover">
               <img src="img/eragon.jpg" alt="Eragón" class="cover-img">
             </div>
           </a>
 
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Christopher Paolini">
             <div class="book-cover">
               <img src="img/eldest.jpg" alt="Eldest" class="cover-img">
             </div>
           </a>
 
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Mario Mendoza">
             <div class="book-cover">
               <img src="img/satanas.jpg" alt="Satanás" class="cover-img">
             </div>
           </a>
 
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Antonio García Ángel">
             <div class="book-cover">
               <img src="img/que-pase-lo-peor.jpg" alt="Que pase lo peor" class="cover-img">
             </div>
           </a>
 
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Germán Puerta">
             <div class="book-cover">
               <img src="img/el-fenomeno-ovni.jpg" alt="El fenómeno ovni" class="cover-img">
             </div>
@@ -110,40 +105,39 @@
         </div>
         <div class="shelf-wood"></div>
 
-        <!-- REPISA 3: Manga, Manhwa, Romance e Isekai -->
         <div class="shelf" style="margin-top: 2rem;">
 
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Mizuho Kusanagi">
             <div class="book-cover">
               <img src="img/akatsuki-no-yona.jpg" alt="Akatsuki no Yona" class="cover-img">
             </div>
           </a>
 
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Kintetsu Yamada">
             <div class="book-cover">
               <img src="img/ase-to-sekken.jpg" alt="Ase to Sekken" class="cover-img">
             </div>
           </a>
 
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Autor Isekai">
             <div class="book-cover">
               <img src="img/jishou-akuyaku.jpg" alt="Jishou Akuyaku Reijou" class="cover-img">
             </div>
           </a>
 
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Autor Manhwa">
             <div class="book-cover">
               <img src="img/cambiare-el-genero.jpg" alt="Cambiaré el género de esta novela" class="cover-img">
             </div>
           </a>
 
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Emilia Rossi">
             <div class="book-cover">
               <img src="img/su-tesoro.jpg" alt="Su tesoro" class="cover-img">
             </div>
           </a>
 
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Emilia Rossi">
             <div class="book-cover">
               <img src="img/su-julieta.jpg" alt="Su Julieta" class="cover-img">
             </div>
@@ -155,38 +149,37 @@
       </div>
     </section>
 
-    <!-- Sección Cementerio DNF (Libros Abandonados) -->
     <section id="cementerio" style="margin-top: 2.5rem;">
       <h2 class="section-title">El Cementerio (Libros Abandonados / DNF)</h2>
       
       <div class="bookcase dnf-case">
         <div class="shelf">
           
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Jenika Snow">
             <div class="book-cover">
               <img src="img/gran-lobo-malo.jpg" alt="Gran lobo malo" class="cover-img">
             </div>
           </a>
 
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Makoto Shinkai">
             <div class="book-cover">
               <img src="img/ella-y-su-gato.jpg" alt="Ella y su gato" class="cover-img">
             </div>
           </a>
 
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Alexandre Dumas">
             <div class="book-cover">
               <img src="img/la-marquesa-de-brinvilliers.jpg" alt="La Marquesa de Brinvilliers" class="cover-img">
             </div>
           </a>
 
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Paul Pen">
             <div class="book-cover">
               <img src="img/la-metamorfosis-infinita.jpg" alt="La metamorfosis infinita" class="cover-img">
             </div>
           </a>
 
-          <a href="#" class="book-item">
+          <a href="#" class="book-item" data-author="Ann Hood">
             <div class="book-cover">
               <img src="img/el-hilo-rojo.jpg" alt="El hilo rojo" class="cover-img">
             </div>
@@ -197,7 +190,6 @@
       </div>
     </section>
 
-    <!-- Sección Sobre Mí -->
     <section id="sobre-mi" class="about-section">
       <h2 class="section-title">Sobre mí & Esta Bitácora</h2>
       <div class="about-container">
@@ -214,13 +206,12 @@
     </section>
   </main>
 
-  <!-- Pie de página -->
   <footer>
     <p>© 2026 Universo de Reseñas — Creado con ☕ y libros</p>
   </footer>
 
-  <!-- Botón Flotante Volver Arriba -->
   <a href="#" class="back-to-top" title="Volver arriba">↑</a>
 
+  <script src="script.js"></script>
 </body>
 </html>
