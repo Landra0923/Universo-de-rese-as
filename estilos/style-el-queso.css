@@ -1,0 +1,250 @@
+/* ==========================================================================
+   ESTILO PARA LA RESEÑA: EL QUESO Y LOS GUSANOS
+   Paleta inspirada en la edición de Península:
+   - Fondo turquesa/teal pastel: #6ebac9
+   - Círculo y acentos marrón castaño: #6e3729
+   - Cajas y fondo de tarjeta crema suave: #fdfbf7 / #f5ede0
+   ========================================================================== */
+
+body {
+  background-color: #6ebac9;
+  color: #2c221e;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal: Ampliado a los lados y equilibrado arriba */
+.review-main-container {
+  max-width: 1200px; /* Ancho ampliado para reducir espacio azul lateral */
+  width: 95%;        /* Ocupa casi todo el ancho disponible */
+  margin: 2rem auto 3rem auto; /* Distancia superior e inferior equilibrada */
+  padding: 0;
+  position: relative;
+}
+
+/* Enlace Volver al Librero */
+.back-link {
+  display: inline-block;
+  color: #6e3729;
+  background: #fdfbf7;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.back-link:hover {
+  transform: translateX(-4px);
+  background: #f5ede0;
+}
+
+/* Tarjeta Principal de la Reseña */
+.review-card {
+  background: #fdfbf7;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border: 3px solid #6e3729;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+}
+
+/* Encabezado de la tarjeta: Portada + Metadatos */
+.review-header {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  border-bottom: 2px dashed #d1c2b0;
+  padding-bottom: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cover-wrapper {
+  flex-shrink: 0;
+  position: relative;
+}
+
+/* Portada alineada con sombra limpia */
+.review-cover {
+  width: 220px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid #d1c2b0;
+  display: block;
+}
+
+.review-meta-data {
+  flex: 1;
+  min-width: 260px;
+}
+
+.book-title {
+  color: #6e3729;
+  font-size: 2.4rem;
+  margin: 0 0 0.3rem 0;
+  line-height: 1.15;
+}
+
+.book-subtitle {
+  color: #555;
+  font-style: italic;
+  font-size: 1.1rem;
+  margin: 0 0 1.2rem 0;
+}
+
+.meta-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 2.2;
+  font-size: 1.05rem;
+}
+
+.stars {
+  color: #cb852a;
+  font-size: 1.2rem;
+  margin-left: 0.3rem;
+}
+
+/* Botón e icono del Pop-up (ⓘ) */
+.info-btn {
+  background: #6e3729;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  margin-left: 8px;
+  vertical-align: middle;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.info-btn:hover {
+  transform: scale(1.15);
+  background: #52271c;
+}
+
+/* Secciones de Contenido */
+.review-content {
+  margin-top: 2rem;
+}
+
+.review-section {
+  margin-bottom: 2rem;
+}
+
+.review-section h2 {
+  color: #6e3729;
+  font-size: 1.4rem;
+  border-bottom: 2px solid #6ebac9;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.review-section p {
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+/* Cajas para las Frases / Citas */
+.quote-box {
+  background: #f5ede0;
+  border-left: 4px solid #6e3729;
+  margin: 1rem 0;
+  padding: 1rem 1.2rem;
+  font-style: italic;
+  border-radius: 0 8px 8px 0;
+}
+
+.quote-box cite {
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #6e3729;
+  margin-top: 0.5rem;
+}
+
+/* Modal / Pop-Up de Calificación */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+}
+
+.modal-content {
+  background: #fdfbf7;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 450px;
+  width: 90%;
+  position: relative;
+  border: 2px solid #6e3729;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #6e3729;
+  cursor: pointer;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  color: #6e3729;
+  border-bottom: 1px dashed #d1c2b0;
+  padding-bottom: 0.5rem;
+}
+
+.rating-scale {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+  .review-main-container {
+    width: 92%;
+    margin-top: 1.5rem;
+  }
+
+  .review-card {
+    padding: 1.5rem;
+  }
+
+  .review-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .review-meta-data {
+    text-align: left;
+    width: 100%;
+  }
+}

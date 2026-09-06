@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reseña: El queso y los gusanos - Universo de reseñas</title>
+  
+  <!-- Estilo general del sitio -->
+  <link rel="stylesheet" href="../style.css">
+  
+  <!-- Estilo exclusivo de esta reseña -->
+  <link rel="stylesheet" href="../estilos/style-el-queso.css">
+</head>
+<body>
+
+  <!-- Header Fijo Nivel Superior -->
+  <header>
+    <a href="../index.html" class="logo">Universo de reseñas</a>
+    <nav>
+      <ul>
+        <li><a href="../index.html#librero">Librero</a></li>
+        <li><a href="../index.html#cementerio">Cementerio DNF</a></li>
+        <li><a href="../index.html#sobre-mi">Sobre mí</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="review-main-container">
+    <a href="../index.html" class="back-link">← Volver al librero</a>
+
+    <article class="review-card">
+      
+      <!-- Encabezado de la Reseña (Cambiado a <div> para evitar heredar position: fixed) -->
+      <div class="review-header">
+        <div class="cover-wrapper">
+          <img src="../img/el-queso-y-los-gusanos.jpg" alt="Portada El queso y los gusanos" class="review-cover">
+        </div>
+
+        <div class="review-meta-data">
+          <h1 class="book-title">El queso y los gusanos</h1>
+          <p class="book-subtitle">El cosmos según un molinero del siglo XVI</p>
+          
+          <ul class="meta-list">
+            <li><strong>Autor:</strong> Carlo Ginzburg</li>
+            <li><strong>Páginas:</strong> ~320 págs.</li>
+            <li><strong>Género:</strong> Ensayo / Microhistoria / Historia cultural</li>
+            <li><strong>Fecha de lectura:</strong> 2026</li>
+            <li class="rating-item">
+              <strong>Calificación:</strong> 
+              <span class="stars">★★★★★</span>
+              <!-- Icono Pop-Up -->
+              <button id="openRatingModal" class="info-btn" title="Ver escala de calificación">ⓘ</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Contenido de la Reseña -->
+      <div class="review-content">
+        
+        <!-- Sinopsis -->
+        <section class="review-section">
+          <h2>Sinopsis</h2>
+          <p>
+            A finales del siglo XVI, en un pequeño pueblo del Friuli italiano, un molinero llamado Domenico Scandella, apodado <em>Menocchio</em>, fue procesado por la Inquisición tras sostener opiniones heréticas sobre la creación del mundo. Carlo Ginzburg reconstruye de forma magistral el universo mental de este hombre común que afirmaba que el mundo se originó de la putrefacción, tal como los gusanos nacen del queso.
+          </p>
+        </section>
+
+        <!-- Opinión Personal -->
+        <section class="review-section">
+          <h2>Opinión Personal</h2>
+          <p>
+            Escribe aquí tu análisis detallado sobre el libro, cómo te pareció la reconstrucción histórica de Ginzburg, el ritmo de la lectura y lo que más te impactó de la relación entre la cultura popular oral y la cultura escrita...
+          </p>
+        </section>
+
+        <!-- Personaje Principal -->
+        <section class="review-section character-section">
+          <h2>Personaje: Domenico Scandella (Menocchio)</h2>
+          <p>
+            Un molinero terco, curioso y apasionado por la lectura en una época donde los libros eran un privilegio escaso. Menocchio no se limita a asimilar lo que lee; reinterpreta los textos sagrados y profanos a través del filtro de su propia cultura campesina y cotidiana, desafiando sin temor las verdades absolutas del dogma eclesiástico.
+          </p>
+        </section>
+
+        <!-- Frases Favoritas -->
+        <section class="review-section quotes-section">
+          <h2>Frases Favoritas</h2>
+          <blockquote class="quote-box">
+            «Todo era un caos... y de aquella masa se formó un queso, tal como el queso se hace de la leche, y en él se crearon gusanos, y estos fueron los ángeles...»
+            <cite>— Menocchio</cite>
+          </blockquote>
+
+          <blockquote class="quote-box">
+            «En el pasado se podía acusar a los historiadores de querer conocer únicamente las "gestas de los reyes"... hoy cada vez más se quiere conocer lo que pensaban los hombres comunes.»
+            <cite>— Carlo Ginzburg</cite>
+          </blockquote>
+        </section>
+
+      </div>
+    </article>
+  </main>
+
+  <!-- Modal / Pop-Up de Calificación -->
+  <div id="ratingModal" class="modal-overlay">
+    <div class="modal-content">
+      <span id="closeRatingModal" class="modal-close">&times;</span>
+      <h3>Escala de Calificación 📖</h3>
+      <ul class="rating-scale">
+        <li><strong>★☆☆☆☆ (1/5):</strong> Malo / No lo recomiendo / DNF.</li>
+        <li><strong>★★☆☆☆ (2/5):</strong> Regular, tenía potencial pero falló en la ejecución.</li>
+        <li><strong>★★★☆☆ (3/5):</strong> Bueno, una lectura entretenida que cumple.</li>
+        <li><strong>★★★★☆ (4/5):</strong> Muy bueno, lectura memorable y recomendable.</li>
+        <li><strong>★★★★★ (5/5):</strong> Increíble / Obra maestra / Favorito personal.</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Universo de reseñas — Creado con café y libros</p>
+  </footer>
+
+  <!-- Script para el modal de calificación -->
+  <script>
+    const modal = document.getElementById('ratingModal');
+    const openBtn = document.getElementById('openRatingModal');
+    const closeBtn = document.getElementById('closeRatingModal');
+
+    openBtn.onclick = () => modal.style.display = 'flex';
+    closeBtn.onclick = () => modal.style.display = 'none';
+    window.onclick = (e) => { if (e.target === modal) modal.style.display = 'none'; };
+  </script>
+</body>
+</html>
