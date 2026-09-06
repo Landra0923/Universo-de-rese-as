@@ -1,29 +1,28 @@
 /* ==========================================================================
    ESTILO PARA LA RESEÑA: EL QUESO Y LOS GUSANOS
-   Paleta inspirada en la edición de Península:
-   - Fondo turquesa/teal pastel: #6ebac9
-   - Círculo y acentos marrón castaño: #6e3729
-   - Cajas y fondo de tarjeta crema suave: #fdfbf7 / #f5ede0
+   Tipografías: 'Playfair Display' (Titulares) & 'EB Garamond' (Cuerpo)
    ========================================================================== */
 
 body {
   background-color: #6ebac9;
   color: #2c221e;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: 'EB Garamond', Georgia, serif; /* Tipografía editorial tipo libro */
   margin: 0;
   padding: 0;
 }
 
-/* Contenedor principal: Ampliado a los lados y equilibrado arriba */
+h1, h2, h3, .book-title, .back-link {
+  font-family: 'Playfair Display', Times, serif;
+}
+
 .review-main-container {
-  max-width: 1200px; /* Ancho ampliado para reducir espacio azul lateral */
-  width: 95%;        /* Ocupa casi todo el ancho disponible */
-  margin: 2rem auto 3rem auto; /* Distancia superior e inferior equilibrada */
+  max-width: 1200px;
+  width: 95%;
+  margin: 2rem auto 3rem auto;
   padding: 0;
   position: relative;
 }
 
-/* Enlace Volver al Librero */
 .back-link {
   display: inline-block;
   color: #6e3729;
@@ -42,7 +41,6 @@ body {
   background: #f5ede0;
 }
 
-/* Tarjeta Principal de la Reseña */
 .review-card {
   background: #fdfbf7;
   border-radius: 12px;
@@ -54,7 +52,6 @@ body {
   position: relative;
 }
 
-/* Encabezado de la tarjeta: Portada + Metadatos */
 .review-header {
   display: flex;
   gap: 2.5rem;
@@ -67,10 +64,8 @@ body {
 
 .cover-wrapper {
   flex-shrink: 0;
-  position: relative;
 }
 
-/* Portada alineada con sombra limpia */
 .review-cover {
   width: 220px;
   border-radius: 6px;
@@ -86,7 +81,7 @@ body {
 
 .book-title {
   color: #6e3729;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   margin: 0 0 0.3rem 0;
   line-height: 1.15;
 }
@@ -94,7 +89,7 @@ body {
 .book-subtitle {
   color: #555;
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin: 0 0 1.2rem 0;
 }
 
@@ -103,16 +98,15 @@ body {
   padding: 0;
   margin: 0;
   line-height: 2.2;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
 }
 
 .stars {
   color: #cb852a;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-left: 0.3rem;
 }
 
-/* Botón e icono del Pop-up (ⓘ) */
 .info-btn {
   background: #6e3729;
   color: #ffffff;
@@ -124,39 +118,138 @@ body {
   cursor: pointer;
   margin-left: 8px;
   vertical-align: middle;
-  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.info-btn:hover {
-  transform: scale(1.15);
-  background: #52271c;
-}
-
-/* Secciones de Contenido */
+/* Secciones generales */
 .review-content {
   margin-top: 2rem;
 }
 
 .review-section {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .review-section h2 {
   color: #6e3729;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   border-bottom: 2px solid #6ebac9;
   display: inline-block;
   padding-bottom: 0.2rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.2rem;
 }
 
 .review-section p {
-  line-height: 1.8;
-  font-size: 1.05rem;
-  margin: 0;
+  line-height: 1.85;
+  font-size: 1.15rem;
+  margin: 0 0 1rem 0;
 }
 
-/* Cajas para las Frases / Citas */
+/* --- FICHA DE PERSONAJE & ILUSTRACIÓN FLOTANTE --- */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.character-portrait-wrapper {
+  float: left;
+  margin: 0 2rem 1.5rem 0;
+  width: 260px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.character-portrait {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+  border: 2px solid #6e3729;
+}
+
+.portrait-caption {
+  display: block;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Contenedor del texto del personaje para controlar el float */
+.character-bio {
+  overflow: hidden;
+}
+
+/* Bocadillo estilo cita / pensamiento */
+.thought-bubble {
+  background: #eef7f8;
+  border: 2px dashed #6ebac9;
+  border-radius: 18px;
+  padding: 1rem 1.3rem;
+  font-style: italic;
+  color: #333;
+  margin: 0 0 1.2rem 0;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+/* --- LÍNEA DEL TIEMPO --- */
+.timeline-container {
+  margin-top: 2.5rem;
+  background: #f5ede0;
+  padding: 1.8rem;
+  border-radius: 10px;
+  border-left: 4px solid #6e3729;
+}
+
+.timeline-container h3 {
+  color: #6e3729;
+  margin-top: 0;
+  font-size: 1.35rem;
+  margin-bottom: 1.5rem;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 2px solid #d1c2b0;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -1.95rem;
+  top: 0.2rem;
+  width: 12px;
+  height: 12px;
+  background-color: #6e3729;
+  border-radius: 50%;
+  border: 2px solid #fdfbf7;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #6e3729;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.timeline-content p {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+/* Citas */
 .quote-box {
   background: #f5ede0;
   border-left: 4px solid #6e3729;
@@ -164,6 +257,7 @@ body {
   padding: 1rem 1.2rem;
   font-style: italic;
   border-radius: 0 8px 8px 0;
+  font-size: 1.15rem;
 }
 
 .quote-box cite {
@@ -171,12 +265,12 @@ body {
   text-align: right;
   font-style: normal;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #6e3729;
   margin-top: 0.5rem;
 }
 
-/* Modal / Pop-Up de Calificación */
+/* Modal */
 .modal-overlay {
   display: none;
   position: fixed;
@@ -198,7 +292,6 @@ body {
   width: 90%;
   position: relative;
   border: 2px solid #6e3729;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
 .modal-close {
@@ -223,18 +316,15 @@ body {
   padding: 0;
   margin: 1rem 0 0 0;
   line-height: 1.8;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
-/* Adaptación para pantallas pequeñas */
 @media (max-width: 768px) {
-  .review-main-container {
-    width: 92%;
-    margin-top: 1.5rem;
-  }
-
-  .review-card {
-    padding: 1.5rem;
+  .character-portrait-wrapper {
+    float: none;
+    margin: 0 auto 1.5rem auto;
+    width: 100%;
+    max-width: 260px;
   }
 
   .review-header {

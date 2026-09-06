@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reseña: El queso y los gusanos - Universo de reseñas</title>
   
-  <!-- Estilo general del sitio -->
+  <!-- Tipografías de edición clásica (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,600..800;1,600..800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="../style.css">
-  
-  <!-- Estilo exclusivo de esta reseña -->
   <link rel="stylesheet" href="../estilos/style-el-queso.css">
 </head>
 <body>
 
-  <!-- Header Fijo Nivel Superior -->
   <header>
     <a href="../index.html" class="logo">Universo de reseñas</a>
     <nav>
@@ -30,7 +31,6 @@
 
     <article class="review-card">
       
-      <!-- Encabezado de la Reseña (Cambiado a <div> para evitar heredar position: fixed) -->
       <div class="review-header">
         <div class="cover-wrapper">
           <img src="../img/el-queso-y-los-gusanos.jpg" alt="Portada El queso y los gusanos" class="review-cover">
@@ -42,47 +42,105 @@
           
           <ul class="meta-list">
             <li><strong>Autor:</strong> Carlo Ginzburg</li>
-            <li><strong>Páginas:</strong> ~320 págs.</li>
-            <li><strong>Género:</strong> Ensayo / Microhistoria / Historia cultural</li>
-            <li><strong>Fecha de lectura:</strong> 2026</li>
+            <li><strong>Páginas:</strong> 231 págs.</li>
+            <li><strong>Género:</strong> Realista</li>
+            <li><strong>Fecha de lectura:</strong> 01/05/2025 - 08/06/2025</li>
             <li class="rating-item">
               <strong>Calificación:</strong> 
-              <span class="stars">★★★★★</span>
-              <!-- Icono Pop-Up -->
+              <span class="stars">★★★★</span>
               <button id="openRatingModal" class="info-btn" title="Ver escala de calificación">ⓘ</button>
             </li>
           </ul>
         </div>
       </div>
 
-      <!-- Contenido de la Reseña -->
       <div class="review-content">
         
-        <!-- Sinopsis -->
         <section class="review-section">
           <h2>Sinopsis</h2>
           <p>
-            A finales del siglo XVI, en un pequeño pueblo del Friuli italiano, un molinero llamado Domenico Scandella, apodado <em>Menocchio</em>, fue procesado por la Inquisición tras sostener opiniones heréticas sobre la creación del mundo. Carlo Ginzburg reconstruye de forma magistral el universo mental de este hombre común que afirmaba que el mundo se originó de la putrefacción, tal como los gusanos nacen del queso.
+            Menocchio, un molinero del siglo XVI que sabe leer y escribir, comienza a creer que el mundo surgió del «caos» y que de este nació una «masa como se hace el queso con la leche». Esta visión cosmogónica lo meterá en problemas y causará su muerte.
           </p>
         </section>
 
-        <!-- Opinión Personal -->
         <section class="review-section">
-          <h2>Opinión Personal</h2>
+          <h2>Reseña / Opinión Personal</h2>
           <p>
-            Escribe aquí tu análisis detallado sobre el libro, cómo te pareció la reconstrucción histórica de Ginzburg, el ritmo de la lectura y lo que más te impactó de la relación entre la cultura popular oral y la cultura escrita...
+            Leer <em>El queso y los gusanos</em> es una experiencia fascinante pero exigente. Carlo Ginzburg nos entrega un libro que logra un equilibrio narrativo entre una novela y un ensayo académico riguroso: nos enteramos de todo y al mismo tiempo de nada... maravilloso. La construcción del texto incluye numerosas citas (realmente numerosas, jajaja) en su idioma original, además de las traducciones; esto puede ralentizar el ritmo de lectura y entorpecer la experiencia para un lector poco habituado a la historiografía. Sin embargo, si se aborda con calma (personalmente lo leí para una clase), se entiende perfectamente, ya que no es una obra que busque atrapar a los lectores de forma superficial, sino que exige una disposición activa y un genuino interés por la historia del libro, la transmisión del conocimiento y las dinámicas de la Iglesia en esa época.
+          </p>
+          <p>
+            Para mí, el gran valor de la obra radica en la reflexión —o más bien en la tesis— que retrata la cultura popular (comprendida desde su riguroso sentido histórico y social, y no bajo las concepciones contemporáneas) a través de Domenico Scandella. El autor nos permite asomarnos a la brecha entre la cultura oral campesina y la cultura escrita de las élites, mostrándonos el filtro único con el que un hombre común de la época procesaba sus lecturas. La reconstrucción de la cosmogonía de Menocchio no solo es un logro metodológico, sino una ventana brillante a las grietas de una época desconocida para nosotros donde la libertad de pensamiento intentaba abrirse paso.
+          </p>
+          <p>
+            Para mí, esta es una lectura que podría ser muy valiosa para quienes disfrutan de la historia cultural y los procesos de circulación de las ideas (mejor dicho... ¿te gustaría ver los libros desde otra perspectiva? Pues qué esperas... ¡LÉELO!). Además, considero que aunque el contexto microhistórico del personaje es muy accesible y completo, para exprimir al máximo el ensayo, el lector que se aventure en estas páginas debería contar con cierta curiosidad conceptual previa; de lo contrario, algunos pasajes podrían dejar lagunas. En definitiva, si yo fuera dictadora, prohibiría este libro.
+          </p>
+          <p>
+            ¿Te interesa leerlo?
           </p>
         </section>
 
-        <!-- Personaje Principal -->
+        <!-- Ficha de Personaje con Imagen Flotante y Línea del Tiempo -->
         <section class="review-section character-section">
           <h2>Personaje: Domenico Scandella (Menocchio)</h2>
-          <p>
-            Un molinero terco, curioso y apasionado por la lectura en una época donde los libros eran un privilegio escaso. Menocchio no se limita a asimilar lo que lee; reinterpreta los textos sagrados y profanos a través del filtro de su propia cultura campesina y cotidiana, desafiando sin temor las verdades absolutas del dogma eclesiástico.
-          </p>
+          
+          <div class="character-profile clearfix">
+            <!-- Imagen de Menocchio -->
+            <div class="character-portrait-wrapper">
+              <img src="../img/menocchio.jpg" alt="Ilustración de Menocchio" class="character-portrait">
+              <span class="portrait-caption">Domenico Scandella, el molinero de Montereale</span>
+            </div>
+
+            <!-- Contenedor del texto del personaje -->
+            <div class="character-bio">
+              <blockquote class="thought-bubble">
+                «Soy Domenico Scandella, alias "Menocchio", un molinero nacido en Montereale durante el siglo XVI. Soy un lector curioso, autodidacta y rebelde. Me gusta hablar mucho.»
+              </blockquote>
+
+              <p>
+                Un molinero terco, curioso y apasionado por la lectura en una época donde los libros eran un privilegio escaso. Menocchio no se limita a asimilar lo que lee; reinterpreta los textos sagrados y profanos a través del filtro de su propia cultura campesina y cotidiana, desafiando sin temor las verdades absolutas del dogma eclesiástico.
+              </p>
+            </div>
+          </div>
+
+          <!-- Línea del tiempo de los juicios -->
+          <div class="timeline-container">
+            <h3>Línea del tiempo: Procesos de la Inquisición</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">1583 (Primer Juicio)</span>
+                  <p>Es denunciado a la Inquisición en Aquilea por proclamar abiertamente sus ideas sobre el origen del mundo y sus críticas a la Iglesia.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">1584 - 1585</span>
+                  <p>Sometido a interrogatorios. Se retracta de sus opiniones y es condenado a prisión perpetua, debiendo vestir el <em>habitello</em> (símbolo de penitencia herética).</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">1599 (Segundo Juicio)</span>
+                  <p>Tras años en libertad condicional, reincide expresando sus opiniones heterodoxas. Denunciado nuevamente, es calificado como relapso por el Santo Oficio.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">1599 / 1600</span>
+                  <p>Es ejecutado en la pira bajo la orden directa del Papa Clemente VIII por negarse a renunciar a su cosmogonía personal.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
-        <!-- Frases Favoritas -->
         <section class="review-section quotes-section">
           <h2>Frases Favoritas</h2>
           <blockquote class="quote-box">
@@ -100,7 +158,6 @@
     </article>
   </main>
 
-  <!-- Modal / Pop-Up de Calificación -->
   <div id="ratingModal" class="modal-overlay">
     <div class="modal-content">
       <span id="closeRatingModal" class="modal-close">&times;</span>
@@ -119,7 +176,6 @@
     <p>© 2026 Universo de reseñas — Creado con café y libros</p>
   </footer>
 
-  <!-- Script para el modal de calificación -->
   <script>
     const modal = document.getElementById('ratingModal');
     const openBtn = document.getElementById('openRatingModal');
