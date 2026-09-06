@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universo de Reseñas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Fijo con navegación integrada -->
+  <header>
+    <a href="#" class="logo">Universo de Reseñas</a>
+    <nav>
+      <ul>
+        <li><a href="#librero">Librero</a></li>
+        <li><a href="#cementerio">Cementerio DNF</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Buscador Principal -->
+  <div class="search-container">
+    <input type="text" class="search-input" placeholder="Buscar por título o autor...">
+  </div>
+
+  <main>
+    <!-- Sección Librero Principal -->
+    <section id="librero">
+      <h2 class="section-title">Mi Librero</h2>
+      
+      <div class="bookcase">
+        <div class="shelf">
+          
+          <a href="resenas/el-tiempo-de-la-cienaga.html" class="book-item">
+            <div class="book-cover placeholder-1">
+              <span class="cover-text">El tiempo de la ciénaga</span>
+            </div>
+          </a>
+
+          <a href="resenas/cien-anos-de-soledad.html" class="book-item">
+            <div class="book-cover placeholder-2">
+              <span class="cover-text">Cien años de soledad</span>
+            </div>
+          </a>
+
+        </div>
+        <div class="shelf-wood"></div>
+      </div>
+    </section>
+
+    <!-- Sección Cementerio DNF -->
+    <section id="cementerio" style="margin-top: 2.5rem;">
+      <h2 class="section-title">El Cementerio (Libros Abandonados)</h2>
+      
+      <div class="bookcase dnf-case">
+        <div class="shelf">
+          
+          <a href="#" class="book-item">
+            <div class="book-cover placeholder-dnf">
+              <span class="cover-text">Libro Abandonado</span>
+            </div>
+          </a>
+
+        </div>
+        <div class="shelf-wood dnf-wood"></div>
+      </div>
+    </section>
+
+    <!-- Sección Sobre Mí Integrada -->
+    <section id="sobre-mi" class="about-section">
+      <h2 class="section-title">Sobre mí & Esta Bitácora</h2>
+      <div class="about-container">
+        <div class="about-text">
+          <p>¡Hola! Bienvenidos a este espacio. Soy lectora apasionada y este rincón digital es mi bitácora personal donde comparto análisis, impresiones sinceras y reflexiones sobre los libros que me acompañan.</p>
+          <p>Aquí encontrarás desde clásicos inolvidables hasta análisis de narrativa contemporánea, además de un honesto "cementerio" para aquellos libros que no lograron atraparme.</p>
+        </div>
+        <div class="now-reading-card">
+          <h3>Leyendo actualmente 📖</h3>
+          <p class="book-now"><strong>Mansfield Park</strong></p>
+          <p class="author-now">Jane Austen</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Universo de Reseñas — Creado con ☕ y libros</p>
+  </footer>
+
+  <!-- Botón Flotante Volver Arriba -->
+  <a href="#" class="back-to-top" title="Volver arriba">↑</a>
+
+</body>
+</html>
