@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reseña: Mansfield Park - Universo de reseñas</title>
+  
+  <!-- Tipografías de edición clásica -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,600..800;1,600..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../estilos/style-mansfield.css">
+</head>
+<body>
+
+  <header>
+    <a href="../index.html" class="logo">Universo de reseñas</a>
+    <nav>
+      <ul>
+        <li><a href="../index.html#librero">Librero</a></li>
+        <li><a href="../index.html#cementerio">Cementerio DNF</a></li>
+        <li><a href="../index.html#sobre-mi">Sobre mí</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="review-main-container">
+    <a href="../index.html" class="back-link">← Volver al librero</a>
+
+    <article class="review-card">
+      
+      <!-- Encabezado con datos del libro -->
+      <div class="review-header">
+        <div class="cover-wrapper">
+          <img src="../img/mansfield-park.jpg" alt="Portada Mansfield Park Cranford Collection" class="review-cover">
+        </div>
+
+        <div class="review-meta-data">
+          <h1 class="book-title">Mansfield Park</h1>
+          <p class="book-subtitle">Virtud, clase y el drama de la sociedad regente</p>
+          
+          <ul class="meta-list">
+            <li><strong>Autor:</strong> Jane Austen</li>
+            <li><strong>Páginas:</strong> [Poner páginas] págs.</li>
+            <li><strong>Género:</strong> Clásico / Romance de Época</li>
+            <li><strong>Fecha de lectura:</strong> [Fecha inicio] - [Fecha fin]</li>
+            <li class="rating-item">
+              <strong>Calificación:</strong> 
+              <span class="stars">★★★★☆</span>
+              <button id="openRatingModal" class="info-btn" title="Ver escala de calificación">ⓘ</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="review-content">
+        
+        <!-- Sinopsis -->
+        <section class="review-section">
+          <h2>Sinopsis</h2>
+          <p>
+            Fanny Price, una joven tímida de familia humilde, es enviada a vivir con sus tíos ricos a la majestuosa finca de Mansfield Park. Allí crecerá entre los desprecios de casi toda la familia, encontrando refugio únicamente en su primo Edmund, mientras aprende a navegar la moralidad y los escándalos de la alta sociedad.
+          </p>
+        </section>
+
+        <!-- Opinión Personal y Spoiler -->
+        <section class="review-section">
+          <h2>Reseña / Opinión Personal</h2>
+          <p>
+            [Escribe aquí tu opinión general sobre la obra, el estilo de Jane Austen y el desarrollo de la trama sin spoilers...]
+          </p>
+
+          <!-- Bloque de Spoiler Clickeable con Sombreado de Censura -->
+          <div class="spoiler-container">
+            <p class="spoiler-warning">🚨 <strong>Advertencia de Spoiler:</strong> Haz clic en el recuadro negro para revelar el texto oculto.</p>
+            <div class="spoiler-overlay" onclick="this.classList.toggle('revealed')">
+              <span class="spoiler-text">
+                [Escribe aquí tu reseña o comentario con spoilers. Este texto estará cubierto por una barra negra y se revelará únicamente cuando el lector haga clic sobre él...]
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Dinámica Principal: Fanny - Corazón SVG Clickeable - Edmund -->
+        <section class="review-section main-pair-section">
+          <h2>Dinámica Principal: El Vínculo en Mansfield</h2>
+
+          <div class="fanny-edmund-container">
+            
+            <!-- Personaje 1: Fanny Price -->
+            <div class="character-card hero-card">
+              <img src="../img/fanny-price.jpg" alt="Fanny Price" class="hero-avatar">
+              <h3>Fanny Price</h3>
+              <p class="char-role">La protagonista virtuosa</p>
+              <p>[Tu reseña/descripción sobre Fanny Price...]</p>
+            </div>
+
+            <!-- Centro: Corazón SVG Clickeable -->
+            <div id="openRelationModal" class="heart-svg-wrapper" role="button" tabindex="0" title="Ver análisis de la relación">
+              <svg class="heart-svg" viewBox="0 0 200 180" xmlns="http://www.w3.org/2000/svg">
+                <!-- Silueta de corazón con borde punteado -->
+                <path class="heart-shape" d="M 100,165 
+                         C 20,100 0,55 45,18 
+                         C 75,-5 100,25 100,25 
+                         C 100,25 125,-5 155,18 
+                         C 200,55 180,100 100,165 Z" />
+                
+                <!-- Texto alineado dentro del corazón -->
+                <text x="100" y="82" class="svg-heart-title">Su Relación</text>
+                <text x="100" y="102" class="svg-heart-subtext">Haz clic para leer</text>
+              </svg>
+            </div>
+
+            <!-- Personaje 2: Edmund Bertram -->
+            <div class="character-card hero-card">
+              <img src="../img/edmund-bertram.jpg" alt="Edmund Bertram" class="hero-avatar">
+              <h3>Edmund Bertram</h3>
+              <p class="char-role">El primo moralista</p>
+              <p>[Tu reseña/descripción sobre Edmund Bertram...]</p>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Galería de Personajes Secundarios con Foto -->
+        <section class="review-section secondary-characters-section">
+          <h2>Galería de Personajes</h2>
+          
+          <div class="characters-grid">
+            <div class="character-card">
+              <img src="../img/henry-crawford.jpg" alt="Henry Crawford" class="char-avatar">
+              <h4>Henry Crawford</h4>
+              <p>[Reseña/opinión sobre Henry...]</p>
+            </div>
+
+            <div class="character-card">
+              <img src="../img/mary-crawford.jpg" alt="Mary Crawford" class="char-avatar">
+              <h4>Mary Crawford</h4>
+              <p>[Reseña/opinión sobre Mary...]</p>
+            </div>
+
+            <div class="character-card">
+              <img src="../img/sir-thomas.jpg" alt="Sir Thomas Bertram" class="char-avatar">
+              <h4>Sir Thomas Bertram</h4>
+              <p>[Reseña/opinión sobre Sir Thomas...]</p>
+            </div>
+
+            <div class="character-card">
+              <img src="../img/lady-bertram.jpg" alt="Lady Bertram" class="char-avatar">
+              <h4>Lady Bertram</h4>
+              <p>[Reseña/opinión sobre Lady Bertram...]</p>
+            </div>
+
+            <div class="character-card">
+              <img src="../img/mrs-norris.jpg" alt="Mrs. Norris" class="char-avatar">
+              <h4>Mrs. Norris</h4>
+              <p>[Reseña/opinión sobre Mrs. Norris...]</p>
+            </div>
+
+            <div class="character-card">
+              <img src="../img/tom-bertram.jpg" alt="Tom Bertram" class="char-avatar">
+              <h4>Tom Bertram</h4>
+              <p>[Reseña/opinión sobre Tom...]</p>
+            </div>
+
+            <div class="character-card">
+              <img src="../img/maria-bertram.jpg" alt="Maria Bertram" class="char-avatar">
+              <h4>Maria Bertram</h4>
+              <p>[Reseña/opinión sobre Maria...]</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Citas Favoritas -->
+        <section class="review-section quotes-section">
+          <h2>Frases Favoritas</h2>
+          <blockquote class="quote-box">
+            «Tengo que aprender a soportar que se me considere la persona más feliz del mundo, cuando en realidad soy la más desdichada.»
+            <cite>— Jane Austen, Mansfield Park</cite>
+          </blockquote>
+        </section>
+
+      </div>
+    </article>
+  </main>
+
+  <!-- Modal 1: Calificación -->
+  <div id="ratingModal" class="modal-overlay">
+    <div class="modal-content">
+      <span id="closeRatingModal" class="modal-close">&times;</span>
+      <h3>Escala de Calificación 📖</h3>
+      <ul class="rating-scale">
+        <li><strong>★☆☆☆☆ (1/5):</strong> No me gusto, es una lectura que no termine.</li>
+        <li><strong>★⯨☆☆☆ (1.5/5):</strong> No me gusto, sin embargo, lo termine.</li>
+        <li><strong>★★☆☆☆ (2/5):</strong> No me gusto mucho aunque tiene algo que resulta pasable.</li>
+        <li><strong>★★⯨☆☆ (2.5/5):</strong> No fue una gran experiencia, pero tuvo momentos buenos.</li>
+        <li><strong>★★★☆☆ (3/5):</strong> Me gusto, pero es olvidable, cumple con entretener.</li>
+        <li><strong>★★★⯨☆ (3.5/5):</strong> Me gusto, tiene momentos memorables pero le falta algo.</li>
+        <li><strong>★★★★☆ (4/5):</strong> Fue casi perfecta, me atrapo pero algunos elementos me disgustaron un poco.</li>
+        <li><strong>★★★★⯨ (4.5/5):</strong> Perfecta, pero no llega a Favorito.</li>
+        <li><strong>★★★★★ (5/5):</strong> Favorito personal, seguro dejo una huella en mi.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal 2: Relación Fanny & Edmund -->
+  <div id="relationModal" class="modal-overlay">
+    <div class="modal-content">
+      <span id="closeRelationModal" class="modal-close">&times;</span>
+      <h3>El Vínculo: Fanny & Edmund ♥</h3>
+      <div class="modal-body-text">
+        <p>[Escribe aquí tu análisis detallado sobre la relación entre Fanny y Edmund, sus dilemas morales, el desarrollo del afecto y cómo evoluciona a lo largo de la novela...]</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Universo de reseñas — Creado con café y libros</p>
+  </footer>
+
+  <!-- Script para control de Modales -->
+  <script>
+    // Modal de Calificación
+    const ratingModal = document.getElementById('ratingModal');
+    const openRatingBtn = document.getElementById('openRatingModal');
+    const closeRatingBtn = document.getElementById('closeRatingModal');
+
+    openRatingBtn.onclick = () => ratingModal.style.display = 'flex';
+    closeRatingBtn.onclick = () => ratingModal.style.display = 'none';
+
+    // Modal de Relación (Disparado desde el Corazón SVG)
+    const relationModal = document.getElementById('relationModal');
+    const openRelationBtn = document.getElementById('openRelationModal');
+    const closeRelationBtn = document.getElementById('closeRelationModal');
+
+    openRelationBtn.onclick = () => relationModal.style.display = 'flex';
+    closeRelationBtn.onclick = () => relationModal.style.display = 'none';
+
+    // Accesibilidad con teclado para el corazón SVG (tecla Enter)
+    openRelationBtn.onkeydown = (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        relationModal.style.display = 'flex';
+      }
+    };
+
+    // Cerrar modales al hacer clic fuera de la ventana flotante
+    window.onclick = (e) => { 
+      if (e.target === ratingModal) ratingModal.style.display = 'none';
+      if (e.target === relationModal) relationModal.style.display = 'none';
+    };
+  </script>
+</body>
+</html>
