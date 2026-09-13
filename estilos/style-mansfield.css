@@ -1,15 +1,9 @@
 /* ==========================================================================
    ESTILO PARA LA RESEÑA: MANSFIELD PARK
-   Tipografías: 'Playfair Display' (Titulares) & 'EB Garamond' (Cuerpo)
-   Paleta extraída de la portada Cranford Collection:
-   - Fondo general: Rosa Terracota (#c57b70)
-   - Contenedores y botones: Crema claro (#fcf8f2) y Beige cálido (#f5ede0)
-   - Acentos principales y títulos: Verde Pavo Real (#1e4c4a)
-   - Bordes y detalles: Dorado vintage (#d1a153)
    ========================================================================== */
 
 body {
-  background-color: #c57b70; /* Rosa terracota de la portada */
+  background-color: #c57b70;
   color: #2c221e;
   font-family: 'EB Garamond', Georgia, serif;
   margin: 0;
@@ -149,7 +143,7 @@ h1, h2, h3, h4, .book-title, .back-link {
   margin: 0 0 1rem 0;
 }
 
-/* --- SPOILER CON SOMBREADO DE CENSURA --- */
+/* --- SPOILER --- */
 .spoiler-container {
   background: #f7ebe8;
   border-left: 4px solid #c57b70;
@@ -186,79 +180,104 @@ h1, h2, h3, h4, .book-title, .back-link {
   padding: 0;
 }
 
-/* --- DINÁMICA PRINCIPAL (FANNY - CORAZÓN SVG - EDMUND) --- */
+/* --- DINÁMICA PRINCIPAL: FANNY - EDMUND --- */
 .fanny-edmund-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.2rem;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: stretch !important;
+  justify-content: space-between !important;
+  gap: 1.5rem;
   margin-top: 1.5rem;
+  width: 100%;
 }
 
 .hero-card {
-  flex: 1;
+  flex: 1 1 0;
+  min-width: 0;
   background: #ffffff;
   border: 2px solid #c57b70;
   border-radius: 10px;
-  padding: 1.2rem;
-  text-align: center;
+  padding: 1.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.hero-name {
+  color: #1e4c4a;
+  margin: 0 0 1rem 0;
+  font-size: 1.7rem;
+}
+
+.hero-image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0 1.2rem 0;
 }
 
 .hero-avatar {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
+  width: 100%;
+  max-width: 320px;
+  height: 380px;
   object-fit: cover;
+  object-position: center 20%;
+  border-radius: 8px;
   border: 3px solid #d1a153;
-  margin: 0 auto 0.8rem auto;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
   display: block;
 }
 
-.hero-card h3 {
-  color: #1e4c4a;
-  margin: 0 0 0.2rem 0;
-  font-size: 1.3rem;
+.hero-body {
+  width: 100%;
 }
 
-.char-role {
+.hero-body .char-role {
   font-style: italic;
-  font-size: 0.95rem;
-  color: #c57b70;
-  margin-bottom: 0.8rem;
-}
-
-.hero-card p {
   font-size: 1.05rem;
-  line-height: 1.6;
+  color: #c57b70;
+  margin: 0 0 1rem 0;
+  text-align: center;
+  font-weight: bold;
 }
 
-/* --- SILUETA DE CORAZÓN INTERACTIVA (SVG - ROSA TERRACOTA) --- */
+.hero-body p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0;
+  color: #2c221e;
+  text-align: justify;
+}
+
+/* --- CORAZÓN SVG --- */
 .heart-svg-wrapper {
-  flex: 0 0 170px;
+  flex: 0 0 160px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   outline: none;
   background: transparent;
-  padding: 0 0.5rem;
+  padding: 0;
 }
 
 .heart-svg {
   width: 100%;
   height: auto;
-  max-width: 170px;
+  max-width: 160px;
   overflow: visible;
   transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .heart-shape {
-  fill: #c57b70; /* Fondo rosa terracota */
-  stroke: #1e4c4a; /* Borde verde pavo real */
+  fill: #c57b70;
+  stroke: #1e4c4a;
   stroke-width: 2.5;
-  stroke-dasharray: 4 3; /* Bordes punteados */
+  stroke-dasharray: 4 3;
   transition: fill 0.2s ease, stroke 0.2s ease;
 }
 
@@ -266,7 +285,7 @@ h1, h2, h3, h4, .book-title, .back-link {
   font-family: 'Playfair Display', Times, serif;
   font-size: 16px;
   font-weight: bold;
-  fill: #fcf8f2; /* Texto crema claro */
+  fill: #fcf8f2;
   text-anchor: middle;
   dominant-baseline: middle;
   pointer-events: none;
@@ -276,67 +295,99 @@ h1, h2, h3, h4, .book-title, .back-link {
   font-family: 'EB Garamond', Georgia, serif;
   font-size: 12px;
   font-style: italic;
-  fill: #f5ede0; /* Subtexto crema suave */
+  fill: #f5ede0;
   text-anchor: middle;
   dominant-baseline: middle;
   pointer-events: none;
 }
 
-/* EFECTOS HOVER EN EL CORAZÓN */
 .heart-svg-wrapper:hover .heart-svg {
   transform: scale(1.1);
 }
 
 .heart-svg-wrapper:hover .heart-shape {
-  fill: #b36b60; /* Terracota un poco más oscuro */
-  stroke: #d1a153; /* Borde dorado al pasar el cursor */
+  fill: #b36b60;
+  stroke: #d1a153;
 }
 
-/* --- GALERÍA DE PERSONAJES SECUNDARIOS --- */
+/* --- GALERÍA DE PERSONAJES SECUNDARIOS (NUEVO DISEÑO DE CUADRO VERTICAL) --- */
 .characters-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.2rem;
-  margin-top: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .character-card {
   background-color: #ffffff;
-  border: 1px solid #d1c2b0;
-  border-left: 4px solid #1e4c4a;
+  border: 2px solid #c57b70;
+  border-radius: 10px;
   padding: 1.2rem;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .character-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
 }
 
+/* Encabezado/Contenedor del Cuadro */
+.char-avatar-wrapper {
+  width: 100%;
+  max-width: 200px;
+  height: 230px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Pintura vertical del personaje */
 .char-avatar {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border: 2px solid #d1a153; /* Borde dorado */
-  margin: 0 auto 0.6rem auto;
-  display: block;
+  object-position: center top;
+  border-radius: 6px;
+  border: 3px solid #d1a153;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  background-color: #f7ebe8;
 }
 
-.character-card h4 {
+.char-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.char-info h4 {
   color: #1e4c4a;
-  margin: 0 0 0.4rem 0;
-  font-size: 1.15rem;
+  margin: 0 0 0.3rem 0;
+  font-size: 1.3rem;
+  font-family: 'Playfair Display', Times, serif;
 }
 
-.character-card p {
+.char-info .char-role {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #c57b70;
+  margin: 0 0 0.8rem 0;
+  font-weight: bold;
+}
+
+.char-info .char-desc {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0;
   color: #2c221e;
+  text-align: justify;
 }
 
 /* --- CITAS --- */
@@ -360,7 +411,7 @@ h1, h2, h3, h4, .book-title, .back-link {
   margin-top: 0.5rem;
 }
 
-/* --- MODALES Y POP-UPS --- */
+/* --- MODALES --- */
 .modal-overlay {
   display: none;
   position: fixed;
@@ -417,10 +468,10 @@ h1, h2, h3, h4, .book-title, .back-link {
   margin-top: 1rem;
 }
 
-/* --- ADAPTABILIDAD EN PANTALLAS PEQUEÑAS --- */
-@media (max-width: 768px) {
+/* --- ADAPTABILIDAD RESPONSIVE --- */
+@media (max-width: 850px) {
   .fanny-edmund-container {
-    flex-direction: column;
+    flex-direction: column !important;
   }
 
   .heart-svg-wrapper {

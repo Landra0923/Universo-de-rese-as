@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reseña: Mansfield Park - Universo de reseñas</title>
   
-  <!-- Tipografías de edición clásica -->
+  <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,600..800;1,600..800&display=swap" rel="stylesheet">
@@ -109,85 +109,136 @@
           <div class="fanny-edmund-container">
             
             <!-- Personaje 1: Fanny Price -->
-            <div class="character-card hero-card">
-              <img src="../img/fanny-price.jpg" alt="Fanny Price" class="hero-avatar">
-              <h3>Fanny Price</h3>
-              <p class="char-role">La protagonista virtuosa</p>
-              <p>[Tu reseña/descripción sobre Fanny Price...]</p>
+            <div class="hero-card">
+              <h3 class="hero-name">Fanny Price</h3>
+
+              <div class="hero-image-wrapper">
+                <img src="../img/fanny-price.jpg" alt="Fanny Price" class="hero-avatar">
+              </div>
+
+              <div class="hero-body">
+                <p class="char-role">La protagonista virtuosa</p>
+                
+                <p>
+                  Fanny... Fanny ¡oh dulce, dulce Fanny! su infancia para mi fue algo adorable - probablemente porque me identifique con ella - aunque triste, ver como la rechazaban o menospreciaban me arrugaba el corazón, sin embargo y pese a que era la sobrina "proyecto de caridad", termino siendo de las mas amadas, no solo por su familia (si excluidomos a la tia Norris), sino tambien por mi. Y con justa razón: su rectitud y esa negativa a cambiar sus valores la terminaron beneficiando. Era lo que mas me gustaba de ella, que no se abandonaba a si misma por querer encajar (no como Mary...bitch). Su personalidad delicada pero firme la convirtio en una gran personaje, rara vez dudaba de sus convicciones y frecuentemente me hacia sentir una gran empatia por sus situaciones o emociones.
+                </p>
+
+                <p>
+                  Siendo ella todo eso, algo que me daban ganas de pegarle calvasos era su ingenuidad, ella siempre trataba de verle lo bueno a todos, pero bueno...es parte de su encanto, y supongo -objetivamente hablando - que para Austen ella es la encarnación de la pureza burguesa o alguna vaina asi. A veces me parecia un poco hipocrita, ya que a ella no le caia realmente bien Mary y aun asi acepto su amistad, sin embargo eso solo la vuelve mas humana y menos perfecta, me hace entenderla ya que yo tambien he sido asi...aun lo soy (aunque no me culpo es lo que te deja la vida adulta y laboral).
+                </p>
+                
+                <p>
+                  Otra cosa que me gusto es que pese a que Henry le endulzaba el oido, ella no cedio (Fuck you, Henry) y se sostuvo firme en sus sentimientos por Edmund (aunque esa relación me cause una perturbación norteña). Al final fue mi personaje favorito.
+                </p>
+              </div>
             </div>
 
             <!-- Centro: Corazón SVG Clickeable -->
             <div id="openRelationModal" class="heart-svg-wrapper" role="button" tabindex="0" title="Ver análisis de la relación">
               <svg class="heart-svg" viewBox="0 0 200 180" xmlns="http://www.w3.org/2000/svg">
-                <!-- Silueta de corazón con borde punteado -->
-                <path class="heart-shape" d="M 100,165 
-                         C 20,100 0,55 45,18 
-                         C 75,-5 100,25 100,25 
-                         C 100,25 125,-5 155,18 
-                         C 200,55 180,100 100,165 Z" />
-                
-                <!-- Texto alineado dentro del corazón -->
+                <path class="heart-shape" d="M 100,165 C 20,100 0,55 45,18 C 75,-5 100,25 100,25 C 100,25 125,-5 155,18 C 200,55 180,100 100,165 Z" />
                 <text x="100" y="82" class="svg-heart-title">Su Relación</text>
                 <text x="100" y="102" class="svg-heart-subtext">Haz clic para leer</text>
               </svg>
             </div>
 
             <!-- Personaje 2: Edmund Bertram -->
-            <div class="character-card hero-card">
-              <img src="../img/edmund-bertram.jpg" alt="Edmund Bertram" class="hero-avatar">
-              <h3>Edmund Bertram</h3>
-              <p class="char-role">El primo moralista</p>
-              <p>[Tu reseña/descripción sobre Edmund Bertram...]</p>
+            <div class="hero-card">
+              <h3 class="hero-name">Edmund Bertram</h3>
+
+              <div class="hero-image-wrapper">
+                <img src="../img/edmund-bertram.jpg" alt="Edmund Bertram" class="hero-avatar">
+              </div>
+
+              <div class="hero-body">
+                <p class="char-role">El primo moralista</p>
+                <p>[Tu reseña/descripción sobre Edmund Bertram...]</p>
+              </div>
             </div>
 
           </div>
         </section>
 
-        <!-- Galería de Personajes Secundarios con Foto -->
+        <!-- Galería de Personajes Secundarios -->
         <section class="review-section secondary-characters-section">
           <h2>Galería de Personajes</h2>
           
           <div class="characters-grid">
             <div class="character-card">
-              <img src="../img/henry-crawford.jpg" alt="Henry Crawford" class="char-avatar">
-              <h4>Henry Crawford</h4>
-              <p>[Reseña/opinión sobre Henry...]</p>
+              <div class="char-avatar-wrapper">
+                <img src="../img/henry-crawford.jpg" alt="Henry Crawford" class="char-avatar">
+              </div>
+              <div class="char-info">
+                <h4>Henry Crawford</h4>
+                <p class="char-role">El seductor voluble</p>
+                <p class="char-desc">[Reseña/opinión sobre Henry...]</p>
+              </div>
             </div>
 
             <div class="character-card">
-              <img src="../img/mary-crawford.jpg" alt="Mary Crawford" class="char-avatar">
-              <h4>Mary Crawford</h4>
-              <p>[Reseña/opinión sobre Mary...]</p>
+              <div class="char-avatar-wrapper">
+                <img src="../img/mary-crawford.jpg" alt="Mary Crawford" class="char-avatar">
+              </div>
+              <div class="char-info">
+                <h4>Mary Crawford</h4>
+                <p class="char-role">La joven mundana y ambiciosa</p>
+                <p class="char-desc">[Reseña/opinión sobre Mary...]</p>
+              </div>
             </div>
 
             <div class="character-card">
-              <img src="../img/sir-thomas.jpg" alt="Sir Thomas Bertram" class="char-avatar">
-              <h4>Sir Thomas Bertram</h4>
-              <p>[Reseña/opinión sobre Sir Thomas...]</p>
+              <div class="char-avatar-wrapper">
+                <img src="../img/sir-thomas.jpg" alt="Sir Thomas Bertram" class="char-avatar">
+              </div>
+              <div class="char-info">
+                <h4>Sir Thomas Bertram</h4>
+                <p class="char-role">El patriarca de Mansfield</p>
+                <p class="char-desc">[Reseña/opinión sobre Sir Thomas...]</p>
+              </div>
             </div>
 
             <div class="character-card">
-              <img src="../img/lady-bertram.jpg" alt="Lady Bertram" class="char-avatar">
-              <h4>Lady Bertram</h4>
-              <p>[Reseña/opinión sobre Lady Bertram...]</p>
+              <div class="char-avatar-wrapper">
+                <img src="../img/lady-bertram.jpg" alt="Lady Bertram" class="char-avatar">
+              </div>
+              <div class="char-info">
+                <h4>Lady Bertram</h4>
+                <p class="char-role">La tía apática e indolente</p>
+                <p class="char-desc">[Reseña/opinión sobre Lady Bertram...]</p>
+              </div>
             </div>
 
             <div class="character-card">
-              <img src="../img/mrs-norris.jpg" alt="Mrs. Norris" class="char-avatar">
-              <h4>Mrs. Norris</h4>
-              <p>[Reseña/opinión sobre Mrs. Norris...]</p>
+              <div class="char-avatar-wrapper">
+                <img src="../img/mrs-norris.jpg" alt="Mrs. Norris" class="char-avatar">
+              </div>
+              <div class="char-info">
+                <h4>Mrs. Norris</h4>
+                <p class="char-role">La tía mezquina y manipuladora</p>
+                <p class="char-desc">[Reseña/opinión sobre Mrs. Norris...]</p>
+              </div>
             </div>
 
             <div class="character-card">
-              <img src="../img/tom-bertram.jpg" alt="Tom Bertram" class="char-avatar">
-              <h4>Tom Bertram</h4>
-              <p>[Reseña/opinión sobre Tom...]</p>
+              <div class="char-avatar-wrapper">
+                <img src="../img/tom-bertram.jpg" alt="Tom Bertram" class="char-avatar">
+              </div>
+              <div class="char-info">
+                <h4>Tom Bertram</h4>
+                <p class="char-role">El primogénito irresponsable</p>
+                <p class="char-desc">[Reseña/opinión sobre Tom...]</p>
+              </div>
             </div>
 
             <div class="character-card">
-              <img src="../img/maria-bertram.jpg" alt="Maria Bertram" class="char-avatar">
-              <h4>Maria Bertram</h4>
-              <p>[Reseña/opinión sobre Maria...]</p>
+              <div class="char-avatar-wrapper">
+                <img src="../img/maria-bertram.jpg" alt="Maria Bertram" class="char-avatar">
+              </div>
+              <div class="char-info">
+                <h4>Maria Bertram</h4>
+                <p class="char-role">La prima vanidosa</p>
+                <p class="char-desc">[Reseña/opinión sobre Maria...]</p>
+              </div>
             </div>
           </div>
         </section>
@@ -239,9 +290,7 @@
     <p>© 2026 Universo de reseñas — Creado con café y libros</p>
   </footer>
 
-  <!-- Script para control de Modales -->
   <script>
-    // Modal de Calificación
     const ratingModal = document.getElementById('ratingModal');
     const openRatingBtn = document.getElementById('openRatingModal');
     const closeRatingBtn = document.getElementById('closeRatingModal');
@@ -249,7 +298,6 @@
     openRatingBtn.onclick = () => ratingModal.style.display = 'flex';
     closeRatingBtn.onclick = () => ratingModal.style.display = 'none';
 
-    // Modal de Relación (Disparado desde el Corazón SVG)
     const relationModal = document.getElementById('relationModal');
     const openRelationBtn = document.getElementById('openRelationModal');
     const closeRelationBtn = document.getElementById('closeRelationModal');
@@ -257,14 +305,12 @@
     openRelationBtn.onclick = () => relationModal.style.display = 'flex';
     closeRelationBtn.onclick = () => relationModal.style.display = 'none';
 
-    // Accesibilidad con teclado para el corazón SVG (tecla Enter)
     openRelationBtn.onkeydown = (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         relationModal.style.display = 'flex';
       }
     };
 
-    // Cerrar modales al hacer clic fuera de la ventana flotante
     window.onclick = (e) => { 
       if (e.target === ratingModal) ratingModal.style.display = 'none';
       if (e.target === relationModal) relationModal.style.display = 'none';
